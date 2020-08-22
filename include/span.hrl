@@ -1,0 +1,1 @@
+-record(span, {spanId, parentSpanId, displayName, startTime, endTime}).
