@@ -1,13 +1,14 @@
-{application, trace_exporter,
+{application, trace_exporter_example,
  [{description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {trace_exporter_app, []}},
+  {mod, {trace_exporter_example_app, []}},
   {applications,
    [kernel,
     stdlib,
-    egoth,
-    ssl
+    ssl,
+    cowboy,
+    trace_exporter
    ]},
   {env,[]},
   {modules, []},
