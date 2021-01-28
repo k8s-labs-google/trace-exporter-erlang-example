@@ -45,7 +45,7 @@ start(_StartType, _StartArgs) ->
 
     trace_exporter:create_span(Project, TraceId, SpanId, Body),
 
-
+    ot_sampler:setup(probability, {probability, 0.0001}),
 
     %
     trace_exporter_example_sup:start_link().
